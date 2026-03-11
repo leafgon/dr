@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
-        <link rel="canonical" href="https://leafgon.github.io/dr/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Dialogic Resonator Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="canonical" href="https://leafgon.github.io/dr/dr-lendlease/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Lendlease - Dialogic Resonator Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Dialogic Resonator Docs</a>
+                <a class="navbar-brand" href="..">Dialogic Resonator Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,19 +35,19 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                                <a href=".." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="project-overview/" class="nav-link">Project Overview</a>
+                                <a href="../project-overview/" class="nav-link">Project Overview</a>
                             </li>
                             <li class="nav-item">
-                                <a href="dr-lendlease/" class="nav-link">Lendlease</a>
+                                <a href="./" class="nav-link active" aria-current="page">Lendlease</a>
                             </li>
                             <li class="nav-item">
-                                <a href="dr-igp/" class="nav-link">IGP</a>
+                                <a href="../dr-igp/" class="nav-link">IGP</a>
                             </li>
                             <li class="nav-item">
-                                <a href="dr-sidara/" class="nav-link">Sidara</a>
+                                <a href="../dr-sidara/" class="nav-link">Sidara</a>
                             </li>
                         </ul>
 
@@ -58,12 +58,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../project-overview/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="project-overview/" class="nav-link">
+                                <a rel="next" href="../dr-igp/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -85,13 +85,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#dialogic-resonator-documentation" class="nav-link">Dialogic Resonator Documentation</a>
+            <li class="nav-item" data-bs-level="1"><a href="#use-case-1-lendlease" class="nav-link">Use case 1: Lendlease</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#read-first" class="nav-link">Read first</a>
+            <li class="nav-item" data-bs-level="2"><a href="#key-perspective" class="nav-link">Key perspective</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#current-use-cases" class="nav-link">Current use cases</a>
+            <li class="nav-item" data-bs-level="2"><a href="#why-this-matters" class="nav-link">Why this matters</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#current-scope" class="nav-link">Current scope</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -102,19 +106,20 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="dialogic-resonator-documentation">Dialogic Resonator Documentation</h1>
-<p>Dialogic Resonator (DR) is a project funded by the UCL Data Empowered Society Grand Challenge. DR uses artificial intelligence to facilitate decision-making by people on complex societal issues. The project aims to make the use of AI more transparent, accountable, and equitable in participatory decision-making processes.</p>
-<p>This section provides a high-level overview of DR and its current use cases, without implementation details.</p>
-<h2 id="read-first">Read first</h2>
+<h1 id="use-case-1-lendlease">Use case 1: Lendlease</h1>
+<p>The Lendlease use case focuses on the pre-planning-application step in urban redevelopment, where choices are still being shaped and different stakeholders may see priorities differently.</p>
+<p>See also the <a href="../project-overview/">Project Overview</a> and <a href="../dr-igp/">Use case 2: IGP</a>.</p>
+<p>The goal is to support better conversations before formal planning submissions. This includes helping participants surface trade-offs clearly, discuss competing concerns openly, and identify where alignment is possible.</p>
+<h2 id="key-perspective">Key perspective</h2>
 <ul>
-<li><a href="project-overview/">Project Overview</a></li>
+<li>Encourage more transparent discussion of options and their implications.</li>
+<li>Improve shared understanding between institutions, professionals, and affected communities.</li>
+<li>Strengthen trust by making reasoning clearer, not just outcomes.</li>
 </ul>
-<h2 id="current-use-cases">Current use cases</h2>
-<ul>
-<li><a href="dr-lendlease/">Use case 1: Lendlease</a></li>
-<li><a href="dr-igp/">Use case 2: IGP (UCL Institute for Global Prosperity)</a></li>
-<li><a href="dr-sidara/">Use case 3: Sidara</a></li>
-</ul></div>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>Urban redevelopment decisions often carry long-term consequences for neighborhoods, public services, and local opportunity. A more structured and inclusive dialogue process can help reduce misunderstanding and improve confidence in the direction taken.</p>
+<h2 id="current-scope">Current scope</h2>
+<p>This summary covers the pre-planning-application phase of decision-making at a general level. Detailed governance, data controls, and technical procedures are maintained in internal and project-specific documentation.</p></div>
             </div>
         </div>
 
@@ -122,13 +127,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -193,8 +198,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2026-03-11 19:34:31.170949+00:00
--->
